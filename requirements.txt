@@ -1,0 +1,7 @@
+langchain
+langchain_community
+pandasai==2.2.4
+streamlit
+requests
+python-dotenv
+protobuf

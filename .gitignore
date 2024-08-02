@@ -1,0 +1,74 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.sqlite3
+*.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Environment variable files
+.env
+
+# Pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.log
+*.tmp
+*.out
+*.err
+
+# MyPy
+.mypy_cache/
+
+# Bandit
+.bandit/
+
+# Coverage reports
+coverage-report/
+*.cover
+
+# Sphinx documentation
+docs/_build/
+
+# FastAPI generated files
+*.html
+*.css
+*.js
+*.jpg
+*.png
+
+# Docker
+#Dockerfile
+#docker-compose.yml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Poetry
+.poetry/
+poetry.lock

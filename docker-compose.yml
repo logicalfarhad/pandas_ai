@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1  # Ensures Python output is logged in real-time
+      - LLM_AUTH_TOKEN=c2FsaTpQYXNzd29yZEAx
+      - LLM_ENDPOINT=https://genai.iais.fraunhofer.de/api/v1/models/Mistral-7B-Instruct-v0.3_t2t  # Set the LLM endpoint accessible from the streamlit service
+    restart: unless-stopped
+    volumes:
+      - ./exports/charts:/app/exports/charts 
